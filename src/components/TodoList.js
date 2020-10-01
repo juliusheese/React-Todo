@@ -7,14 +7,7 @@ class TodoList extends React.Component {
     render() {
         return (
             <div>
-                {
-                    this.props.todoList.map(i =>
-                        <Todo
-                            i={i}
-                            k={i.id}
-                            tI={this.props.tI}
-                        />)
-                }
+                { this.props.todoList.map(i => <Todo i={i} k={i.id} tI={this.props.tI} />)}
             </div>
         )
     }
